@@ -113,6 +113,9 @@ i{
 }
 
 @media only screen and (width<500px) {
+    .nav{
+        height: 10vh;
+    }
     .home{
         flex-direction: column;
     }
