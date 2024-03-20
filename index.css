@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:  black;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    height:15vh;
+    border-bottom: 1px solid black;
+}
+#nav-title{
+    outline: none;
+    color: white;
+    flex: 1;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-left: 10rem;
+    font-family: "Bungee Hairline", sans-serif;
+    /* font-family: "Poiret One", sans-serif; */
+    /* font-family: "Warnes", cursive; */
+}
+.nav-buttons{
+
+    /* background-color: blue; */
+    flex: 2;
+}
+.nav-button-each {
+    outline: none;
+    font-family: "Delius Swash Caps", cursive;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-left:5vw;
+}
+a{
+    text-decoration: none;
+    color: white; 
+}
+
+/* home body part */
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#profile-pic{
+    margin-right: 100px;
+    height:70vh;
+    /* filter: grayscale(1); */
+    /* mix-blend-mode:  multiply; */
+
+    /* -webkit-filter: invert(1);  invert image
+        filter: invert(1); */
+}
+
+
+.profile-details{/* details*/
+    color: white;
+}
+#hello{
+    font-size: 3rem;
+}
+#i-am{
+    font-size: 5rem;
+}
