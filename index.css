@@ -111,14 +111,29 @@ i{
     font-family: "Poiret One", sans-serif;
     font-size: 1.2rem;
 }
+#find-me{
+    font-family: "Poiret One", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.socials i{
+    cursor: pointer;
+    margin-right: 10px;
+    transition:0.5s all ease;
+}
+.socials i:hover{
+    font-size: 1.5rem;    
+}
+
 
 @media only screen and (width<500px) {
     
     .home{
         flex-direction: column;
+        justify-content: flex-start;
     }
     #profile-pic{
-        margin: 25px 0 0 30px;
+        margin: 0 0 0 0px;
         height:30vh;
     }
     #nav-title{
@@ -129,7 +144,7 @@ i{
     }
     .profile-details{
         margin-left: 5vw;
-        width:90vw;
+        width:100vw;
     }
     #hello{
         font-size: 2rem;
