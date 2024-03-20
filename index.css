@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400..800&family=Bungee+Hairline&family=Charmonman:wght@400;700&family=Corinthia:wght@400;700&family=Dancing+Script:wght@400..700&family=Delius+Swash+Caps&family=Edu+SA+Beginner:wght@400..700&family=Poiret+One&family=Warnes&display=swap');
 *{
     padding: 0;
     margin: 0;
 }
 body{
-    background-color:  black;
+    background-color:  rgb(25, 23, 23);
+    /* background-color: black; */
 }
 .nav{
     display: flex;
@@ -15,12 +17,12 @@ body{
     outline: none;
     color: white;
     flex: 1;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: bold;
     margin-left: 10rem;
-    font-family: "Bungee Hairline", sans-serif;
-    /* font-family: "Poiret One", sans-serif; */
-    /* font-family: "Warnes", cursive; */
+    /* font-family: "Charmonman", cursive; */
+    font-family: "Dancing Script", cursive;
+    /* font-family: "Bungee Hairline", sans-serif; */
 }
 .nav-buttons{
 
@@ -42,6 +44,7 @@ a{
 
 /* home body part */
 .home{
+    height: 84vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,7 +65,24 @@ a{
 }
 #hello{
     font-size: 3rem;
+    font-weight: bold;
+    font-family: "Poiret One", sans-serif;
+    /* font-family: "Warnes", cursive; */
 }
 #i-am{
     font-size: 5rem;
+    /* font-family: "Warnes", cursive; */
+    font-weight: bold;
+    font-family: "Poiret One", sans-serif;
+}
+#intro{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 900;
+    padding: 5px  15px;
+    background-color: white;
+    font-family: "Poiret One", sans-serif;
+    /* border-radius: ; */
+    
 }
