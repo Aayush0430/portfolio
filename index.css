@@ -113,15 +113,13 @@ i{
 }
 
 @media only screen and (width<500px) {
-    .nav{
-        height: 10vh;
-    }
+    
     .home{
         flex-direction: column;
     }
     #profile-pic{
         margin: 25px 0 0 30px;
-        height:40vh;
+        height:30vh;
     }
     #nav-title{
        margin-left:3rem; 
