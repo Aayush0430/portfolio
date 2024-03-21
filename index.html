@@ -20,15 +20,15 @@
     <title>MyFolio</title>
   </head>
   <body>
-    <nav class="nav">
+    <nav id="nav">
       <span id="nav-title"><a href="index.html">MyFolio</a></span>
-      <ul class="nav-buttons">
+      <ul id="nav-buttons">
         <li><a href="#home" class="nav-button-each">Home</a></li>
         <li><a href="#about" class="nav-button-each">About</a></li>
         <li><a href="#projects" class="nav-button-each">Projects</a></li>
         <li><a href="#contact" class="nav-button-each">Contact</a></li>
       </ul>
-      <button id="menu">
+      <button id="menu" onclick="menuToggle()">
         <i class="ri-menu-3-line"></i>
       </button>
     </nav>
@@ -79,4 +79,13 @@
       </div>
     </div>
   </body>
+  <script>
+    function menuToggle() {
+      if (document.getElementById("nav-buttons").style.right == "-100%") {
+        document.getElementById("nav-buttons").style.right = "0";
+      } else {
+        document.getElementById("nav-buttons").style.right = "-100%";
+      }
+    }
+  </script>
 </html>

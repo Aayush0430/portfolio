@@ -5,11 +5,13 @@
     margin: 0;
 }
 body{
-    background-color:  rgb(25, 25, 25);
+    overflow-y: hidden;
+    background-color:  #191919;
     width:100vw;
     /* background-color: black; */
 }
-.nav{
+#nav{
+    overflow-y: hidden;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,7 +34,7 @@ body{
     font-family: "Dancing Script", cursive;
     /* font-family: "Bungee Hairline", sans-serif; */
 }
-.nav-buttons{
+#nav-buttons{
     margin-right: 10vw;
     list-style: none;
     display: flex;
@@ -40,7 +42,7 @@ body{
     /* flex: 2; */
     transition: 0.9s ease all;
 }
-.nav-buttons li{
+#nav-buttons li{
     transition: 0.3s ease all;
 }
 .nav-button-each {
@@ -51,11 +53,11 @@ body{
     font-weight: 100;
     margin-left:5vw;
 }
-.nav-buttons li:hover{
+#nav-buttons li:hover{
     transform: translateY(-5px);
 
 }
-.nav-buttons li a:hover{
+#nav-buttons li a:hover{
     background: linear-gradient(to top right, rgb(242, 116, 116), white, rgb(105, 105, 247));
              -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; 
@@ -157,7 +159,17 @@ i{
 }.socials li:hover{
     transform: scale(1.5);
 }
-
+.burger{
+    
+    position: absolute;
+    right:-60vw;
+    top: 0;
+    background-color: aqua;
+    height: 100vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+}
 @media only screen and (width<500px) {
     
     .home{
@@ -168,7 +180,7 @@ i{
         margin: 0 0 0 0px;
         height:40vh;
     }
-    .nav{
+    #nav{
         height:10vh;
 
     }
@@ -177,8 +189,19 @@ i{
 
        margin-left:3rem; 
     }
-    .nav-buttons{
-        display: none;
+    #nav-buttons{
+        margin:0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        height: 90vh;
+        position: fixed;
+        top: 10vh;
+        right: -100%;
+        z-index: 100;
+        background-color: #191919;
+        /* display: none; */
     }
     .profile-details{
         margin-left: 2vw;
