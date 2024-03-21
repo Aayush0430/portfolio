@@ -110,7 +110,7 @@ i{
     background-color: rgb(25, 25, 25);
 }
 /* home body part */
-.home{
+#home{
     height: 84vh;
     display: flex;
     align-items: center;
