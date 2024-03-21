@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="linkIcon.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,7 +33,7 @@
         <i class="ri-menu-3-line"></i>
       </button>
     </nav>
-    <div class="home">
+    <div class="home" onclick="menuOff()">
       <img src="aayushh.png" id="profile-pic" alt="" />
       <div class="profile-details">
         <p id="hello">Hello</p>
@@ -78,14 +79,25 @@
         </ul>
       </div>
     </div>
+    <div id="about">
+      <p>about</p>
+    </div>
   </body>
   <script>
     function menuToggle() {
-      if (document.getElementById("nav-buttons").style.right == "-100%") {
-        document.getElementById("nav-buttons").style.right = "0";
-      } else {
+      if (document.getElementById("nav-buttons").style.right == "0%") {
         document.getElementById("nav-buttons").style.right = "-100%";
+      } else {
+        document.getElementById("nav-buttons").style.right = "0%";
       }
     }
+    function menuOff() {
+      document.getElementById("nav-buttons").style.right = "-100%";
+    }
+    // function colorRed() {
+    //   const navi = document.getElementById("nav");
+    //   nav.classList.toggle("show");
+    //   console.log(navi);
+    // }
   </script>
 </html>

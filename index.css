@@ -4,8 +4,12 @@
     padding: 0;
     margin: 0;
 }
+html{
+
+    scroll-behavior: smooth;
+}
 body{
-    overflow-y: hidden;
+    overflow-x: hidden;
     background-color:  #191919;
     width:100vw;
     /* background-color: black; */
@@ -17,6 +21,10 @@ body{
     justify-content: space-between;
     height:15vh;
     border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #000000b4;
 }
 #nav-title{
     outline: none;
@@ -33,6 +41,25 @@ body{
     /* font-family: "Charmonman", cursive; */
     font-family: "Dancing Script", cursive;
     /* font-family: "Bungee Hairline", sans-serif; */
+}
+#nav-title:hover{
+        background: linear-gradient(to top right, rgb(242, 77, 77), white, rgb(78, 78, 223));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 300% 300%;
+    animation: gradient 1s ease-in-out infinite;
+
+}
+@keyframes gradient {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
 #nav-buttons{
     margin-right: 10vw;
@@ -170,6 +197,11 @@ i{
     display: flex;
     flex-direction: column;
 }
+
+#about{
+    width:100vw;
+    height:100vh;
+}
 @media only screen and (width<500px) {
     
     .home{
@@ -224,3 +256,6 @@ i{
     }
 }
     
+.show{
+    background-color:red;
+}
