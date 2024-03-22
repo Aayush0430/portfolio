@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="iconLink.jpg" />
+    <link rel="icon" href="linkico.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,7 +24,7 @@
     <nav id="nav">
       <span id="nav-title"><a href="index.html">MyFolio</a></span>
       <ul id="nav-buttons">
-        <a href="#home" class="nav-button-each">Home</a>
+        <a href="#home" class="nav-button-each nav-button-1">Home</a>
         <a href="#about" class="nav-button-each">About</a>
         <a href="#projects" class="nav-button-each">Projects</a>
         <a href="#contact" class="nav-button-each">Contact</a>
@@ -85,12 +85,22 @@
   </body>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
-    var typed= new Typed("#hello",{
-      strings :["Hello","Hollo","Hallo","Hyllo"],
-      typeSpeed:500,
-      backSpeed:500,
-      looped:true
-    })
+    var typed = new Typed("#hello", {
+      strings: [
+        "Hello",
+        "नमस्ते",
+        "Nǐ hǎo",
+        "Hallo",
+        "Konnichiwa",
+        "Ciao",
+        "Bonjour",
+      ],
+      typeSpeed: 90,
+      backSpeed: 50,
+      backDelay: 3000,
+      startDelay: 1000,
+      loop: true,
+    });
   </script>
   <script>
     function menuToggle() {
@@ -108,5 +118,5 @@
     //   nav.classList.toggle("show");
     //   console.log(navi);
     // }
-  </>
+  </script>
 </html>
