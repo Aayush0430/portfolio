@@ -24,7 +24,7 @@ body{
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: #000000b4;
+    background-color: #00000034;
     backdrop-filter: blur(5px);  
 }
 #nav-title{
@@ -116,11 +116,11 @@ i{
     justify-content: center;
 }
 #profile-pic{
-    border: 3px solid rgba(255, 255, 255, 0.534);
+    border: 10px solid rgba(12, 12, 12, 0.447);
     border-radius: 50%;
     margin-right: 3rem;
     height:55vh;
-    filter: grayscale(0.35);
+    filter: grayscale(0.3);
     /* filter: blur(0px); */
     /* mix-blend-mode:  multiply; */
     /* -webkit-filter: invert(1);  invert image
