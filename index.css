@@ -121,7 +121,7 @@ i{
     margin-right: 3rem;
     height:55vh;
     filter: grayscale(0.35);
-    filter: blur(5px);
+    /* filter: blur(0px); */
     /* mix-blend-mode:  multiply; */
     /* -webkit-filter: invert(1);  invert image
         filter: invert(1); */
@@ -150,7 +150,7 @@ i{
     
 }
 #intro{
-    border-radius:20px 5px;
+    border-radius:30px 10px;
     margin: 10px 0;
     font-size: 1.05rem;
     color: black;
