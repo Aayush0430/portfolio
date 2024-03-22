@@ -34,9 +34,9 @@
       </button>
     </nav>
     <div id="home" onclick="menuOff()">
-      <img src="aayushh.png" id="profile-pic" alt="" />
+      <img src="aaaa.jpg" id="profile-pic" alt="" />
       <div class="profile-details">
-        <p id="hello">Hello</p>
+        <apan id="hello"></apan>
         <p id="i-am">I'm Aayush</p>
         <p id="intro">~Web developer and a student~</p>
         <p id="intro2">
@@ -83,6 +83,15 @@
       <p>about</p>
     </div>
   </body>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed= new Typed("#hello",{
+      strings :["Hello","Hollo","Hallo","Hyllo"],
+      typeSpeed:500,
+      backSpeed:500,
+      looped:true
+    })
+  </script>
   <script>
     function menuToggle() {
       if (document.getElementById("nav-buttons").style.right == "0%") {
@@ -99,5 +108,5 @@
     //   nav.classList.toggle("show");
     //   console.log(navi);
     // }
-  </script>
+  </>
 </html>

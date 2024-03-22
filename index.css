@@ -25,6 +25,7 @@ body{
     top: 0;
     z-index: 100;
     background-color: #000000b4;
+    backdrop-filter: blur(5px);
 }
 #nav-title{
     outline: none;
@@ -102,7 +103,6 @@ a{
     background-color: rgb(25, 25, 25);
 }
 i{ 
-
     font-size: 2rem;
     color:white;
     background-color: rgb(25, 25, 25);
@@ -116,11 +116,13 @@ i{
     justify-content: center;
 }
 #profile-pic{
+    border: 3px solid rgba(255, 255, 255, 0.534);
+    border-radius: 50%;
     margin-right: 3rem;
-    height:70vh;
-    filter: grayscale(0.5);
+    height:55vh;
+    filter: grayscale(0.35);
+    filter: blur(5px);
     /* mix-blend-mode:  multiply; */
-
     /* -webkit-filter: invert(1);  invert image
         filter: invert(1); */
 }
@@ -132,23 +134,25 @@ i{
     width: 450px;
 }
 #hello{
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     font-weight: bold;
     /* font-family: "Poiret One", sans-serif; */
     /* font-family: "Warnes", cursive; */
     font-family: "Merienda", cursive;
 }
 #i-am{
-    font-size: 5rem;
+    font-size: 4rem;
     /* font-family: "Warnes", cursive; */
     font-weight: bold;
     /* font-family: "Poiret One", sans-serif; */
     font-family: "Merienda", cursive;
+    /* font-family: "Poiret One", sans-serif; */
+    
 }
 #intro{
     border-radius:20px 5px;
     margin: 10px 0;
-    font-size: 1.5rem;
+    font-size: 1.05rem;
     color: black;
     /* background-color: white; */
     background-image: linear-gradient(to top right,rgb(251, 120, 120),white,rgb(176, 176, 245));
@@ -160,7 +164,7 @@ i{
 }
 #intro2{
     font-family: "Poiret One", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 #find-me{
     font-family: "Poiret One", sans-serif;
