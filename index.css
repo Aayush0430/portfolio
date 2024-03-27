@@ -201,10 +201,7 @@ i{
     flex-direction: column;
 }
 
-#about{
-    width:100vw;
-    height:100vh;
-}
+
 @media only screen and (width<500px) {
     html{
         scroll-padding-top: 10vh;
@@ -276,4 +273,26 @@ i{
     
 .show{
     background-color:red;
+}
+#about{
+    width: 100vw;
+        height: 100vh;
+        margin-top: 100px;
+    /* background-color: red; */
+    /* height: max-content; */
+}
+#about h3{
+    color: white;
+    font-size:1.9rem ;
+    font-family: "Poiret One", sans-serif;
+    text-align: center;
+    padding: 40px 0 10px 0;
+}
+#about p{
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    font-family: "Poiret One", sans-serif;
+    padding: 0 10vw;
 }
