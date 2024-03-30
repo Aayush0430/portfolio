@@ -84,10 +84,10 @@
         </ul>
       </div>
     </div>
-    <div id="about">
+    <div id="about" onclick="menuOff()">
       <h3>About Me</h3>
-      <div id="greetings">
-        <p>
+      <div class="about-body">
+        <p id="greetings">
           Greetings! I'm Aayush, a dedicated web developer passionate about
           crafting exceptional digital experiences. Proficient in HTML, CSS, and
           JavaScript, I specialize in bringing creativity and functionality to
@@ -96,10 +96,21 @@
           users. Let's collaborate and turn your ideas into unforgettable online
           experiences!
         </p>
+        <div class="skills">
+          <h4>My skills</h4>
+
+          <div class="skill-images">
+            <img src="" alt="" />
+          </div>
+        </div>
       </div>
-      <div class="languages"></div>
     </div>
+    <div id="projects" onclick="menuOff()">
+      <!-- <h3>My projects</h3> -->
+    </div>
+    <div id="contact" onclick="menuOff()"></div>
   </body>
+
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
     var typed = new Typed("#hello", {

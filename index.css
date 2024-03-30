@@ -200,7 +200,64 @@ i{
     display: flex;
     flex-direction: column;
 }
+.show {
+    background-color: red;
+}
 
+#about {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: cyan; */
+    /* height: max-content; */
+}
+
+.about-body {
+    /* background-color: pink; */
+    padding: 0 5vw;
+    display: flex;
+}
+
+#about h3 {
+    color: white;
+    font-size: 2.5rem;
+    font-family: "Poiret One", sans-serif;
+    text-align: center;
+    padding: 40px 0 10px 0;
+}
+
+#about h4 {
+    color: white;
+    /* background-color: red; */
+    font-size: 2rem;
+    font-family: "Poiret One", sans-serif;
+    text-align: center;
+    padding: 0 0 10px 0;
+}
+
+#greetings {
+    width: 40vw;
+    /* background-color: blue; */
+
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+    font-family: "Poiret One", sans-serif;
+    padding: 2vh 5vw;
+}
+
+.skills {
+    width: 60vw;
+}
+.skills h4{
+    /* background-color: blue; */
+    text-align: center;
+}
 
 @media only screen and (width<500px) {
     html{
@@ -269,36 +326,25 @@ i{
     #menu{
         display: block;
     }
+    #about{
+        /* margin-top: 200px; */
+        /* background-color: red; */
+    }
+    #about h3{
+    font-size: 1.9rem;
+    padding-bottom: 0;
+    }
+    .about-body {
+        flex-direction: column;
+    }
+    #greetings{
+        /* background-color: red; */
+        width: 80vw;
+        font-size: 0.8rem;
+    }
+    .skills{
+        width: 90vw;
+    }
+
 }
     
-.show{
-    background-color:red;
-}
-#about{
-    width: 100vw;
-        height: 100vh;
-        margin-top: 60px;
-    /* background-color: red; */
-    /* height: max-content; */
-}
-#about h3{
-    color: white;
-    font-size:2.5rem ;
-    font-family: "Poiret One", sans-serif;
-    text-align: center;
-    padding: 40px 0 10px 0;
-}
-#greetings{
-    width:40vw;
-    /* background-color: red; */
-}
-#greetings p{ 
-    font-size: 1.1rem;
-    font-weight: 700;
-    line-height: 22px;
-    letter-spacing: 1px;
-    text-align: center;
-    color: white;
-    font-family: "Poiret One", sans-serif;
-    padding: 5vh 5vw;
-}
