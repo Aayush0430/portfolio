@@ -385,15 +385,15 @@ text-align: center;
         height: 90vh;
     }
     #about h3{
-    font-size: 1.9rem;
-    font-weight: 700;
-    padding-bottom: 0;
+        font-size: 1.9rem;
+        font-weight: 700;
+        padding-bottom: 0;
     }
     #about h4{
-    font-family: "Merienda", cursive;
+        font-family: "Merienda", cursive;
         font-size: 1.9rem;
-            font-weight: 700;
-            padding:10px 0 0 0;
+        font-weight: 700;
+        padding:10px 0 0 0;
     }
     .about-body {
         flex-direction: column;
@@ -414,8 +414,6 @@ text-align: center;
     }
     .skill-images{  
         /* justify-content: space-evenly; */
-      
-
     }
     .skill-images img{
         height: 35px;
@@ -426,8 +424,8 @@ text-align: center;
     }
     #projects h3{
         font-size: 1.9rem;
-            font-weight: 700;
-            padding-bottom: 0;
+        font-weight: 700;
+        padding-bottom: 0;
     }
 
 }
