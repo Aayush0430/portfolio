@@ -21,12 +21,13 @@ body{
     align-items: center;
     justify-content: space-between;
     height:15vh;
-    /* border-bottom: 1px solid black; */
+    margin: 0;
+    /* border-top: 1px solid red; */
     position: sticky;
     top: 0;
     z-index: 100;
     background-color: #00000034;
-    backdrop-filter: blur(5px);  
+    backdrop-filter: blur(4px);  
 }
 #nav-title{
     outline: none;
@@ -103,7 +104,7 @@ a{
     border: none;
     background-color: rgb(25, 25, 25);
 }
-i{ 
+#home i{ 
     font-size: 2rem;
     color:white;
     background-color: rgb(25, 25, 25);
@@ -260,8 +261,8 @@ i{
 .skills {
     width: 60vw;
     ;
-    border-right: 5px double rgba(255, 255, 255, 0.09);
-    border-left: 5px double rgba(255, 255, 255, 0.09);
+    border-right: 6px double rgba(255, 255, 255, 0.09);
+    border-left: 6px double rgba(255, 255, 255, 0.09);
     border-radius: 10px;
 }
 .skills h4{
@@ -285,7 +286,7 @@ i{
 }
 #projects{
     width: 100vw;
-        height: 85vh;
+    height: 100vh;
     
 }
 #projects h3{
@@ -303,15 +304,97 @@ i{
     font-size:1.8rem;
     font-family: "Dancing Script", cursive; 
 }
-#contact{
-    height: 30vh;
+#footer{
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: "Poiret One", sans-serif;
+    height: 20vh;
+    background-color: rgba(60, 57, 57, 0.557);
+    padding: 20vh 10vw 0 10vw;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+#footer .contact-me{
+    line-height: 2.2rem;
+    position: absolute;
+    padding: 20px 0 10px 20px;
+    background-color: #606369;
+    height: 13vh;
+    width: 60vw;
+    top: -20%;
+    left: 20vw;
     
 }
-#contact h3{
+#footer h3{
     color: white;
-    font-family: "Dancing Script", cursive; 
-text-align: center;
+    font-size: 2rem;
+    font-family: "Lobster", sans-serif;
+    font-weight: 100;
+    margin-left: 20px;
+    
 }
+#footer h5{
+    color: black;
+    margin-left: 20px;
+    font-size: 1.4rem;
+    font-family: "Dancing Script", cursive;
+    
+} 
+#footer #contact-me-btn{
+    position: absolute;
+    background-color: #999d9f;
+    border: none;
+    margin: none;
+    padding: 10px;
+    font-family: "Poiret One", sans-serif;
+    top:32px;
+    font-weight: 1000;
+    font-size: 1.2rem;
+    font-style: italic;
+    right: 2vw;
+    transition: all 0.2s ease;
+}
+#contact-me-btn p{
+    transition: all 0.3s ease;
+}
+#contact-me-btn:hover{
+    transform: scale(1.1);
+}
+#contact-me-btn:hover p{
+    
+    background: linear-gradient(to top right , rgb(242, 116, 116), rgb(35, 32, 32), rgb(105, 105, 247));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#footer li{
+    list-style: none;
+    transition: 0.3s all ease;
+}
+.footer-nav li{
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+}
+.footer-socials i{
+    font-size:1.4rem ;
+    color: white;
+}
+.footer-nav li:hover{
+    transform: scale(1.2);
+    background: linear-gradient(to right, rgb(242, 116, 116), white, rgb(105, 105, 247));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.footer-socials li:hover {
+    background: linear-gradient(to right, rgb(242, 116, 116), white, rgb(105, 105, 247));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.2);
+}
+
+
 @media only screen and (width<500px) {
     html{
         scroll-padding-top: 10vh;
@@ -427,6 +510,50 @@ text-align: center;
         font-weight: 700;
         padding-bottom: 0;
     }
+    #footer{
+        height: 30vh;
+        flex-direction: column;
+        padding-top: 40px ;
+    }
+    #footer .contact-me {
+    line-height: 1.7rem;
+        height: 8vh;
+        width: 70vw;
+        left: 15vw;
+        top: -15%;
+        padding: 10px 0 6px 15px;
+    }
+    #footer h3 {
+        font-size: 1.3rem;
+        font-family: "Lobster", sans-serif;
+        margin-left: 0;
+        font-weight: 100;
+    }
+    #footer h5 {
+        margin-left: 0;
+        font-size: 1rem;
+        font-family: "Dancing Script", cursive;
 
+    }
+    #footer #contact-me-btn {
+        font-size: .8rem;
+        position: absolute;
+        padding: 6px;
+        top: 37px;
+        right: 2vw;
+    }
+    .footer-nav{
+        display: flex;
+        margin-top: 15apx;
+        justify-content: space-around;
+    }
+    .footer-email{
+        text-align: center;
+    }
+    .footer-socials{
+        display: flex;
+        justify-content: space-around;
+        
+    }
 }
     
