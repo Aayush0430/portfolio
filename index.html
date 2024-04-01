@@ -25,6 +25,34 @@
     />
     <link rel="stylesheet" href="index.css" />
     <title>MyFolio</title>
+    <style>
+      .tooltip {
+        position: relative;
+        display: inline-block;
+      }
+
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: max-content;
+        background-color: rgba(43, 42, 42, 0.317);
+        color: #aca4a4;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        font-family: cursive;
+
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        bottom: 80%;
+        left: 95%;
+        margin-left: -60px;
+      }
+
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
+    </style>
   </head>
   <body>
     <nav id="nav">
@@ -100,15 +128,42 @@
         <div class="skills">
           <h4>My skills</h4>
           <div class="skill-images">
-            <img src="img/html.png" alt="" />
-            <img src="img/php.png" alt="" />
-            <img src="img/css.png" alt="" />
-            <img src="img/js.png" alt="" />
-            <img src="img/java.png" alt="" />
-            <img src="img/python.png" alt="" />
-            <img src="img/mysql.png" alt="" />
-            <img src="img/git.png" alt="" />
-            <img src="img/bootstrap.png" alt="" />
+            <div class="tooltip">
+              <img src="img/html.png" alt="" />
+              <span class="tooltiptext">HTML</span>
+            </div>
+            <div class="tooltip">
+              <img src="img/php.png" alt="" />
+              <span class="tooltiptext">PHP</span>
+            </div>
+            <div class="tooltip">
+              <img src="img/css.png" alt="" />
+              <span class="tooltiptext">CSS</span>
+            </div>
+            <div class="tooltip">
+              <img src="img/js.png" alt="" />
+              <span class="tooltiptext">Javascript</span>
+            </div>
+            <div class="tooltip">
+              <img src="img/java.png" alt="" />
+              <span class="tooltiptext">Java</span>
+            </div>
+            <div class="tooltip">
+              <img src="img/python.png" alt="" />
+              <span class="tooltiptext">Pyhton</span>
+            </div>
+            <div class="tooltip">
+              <img src="img/mysql.png" alt="" />
+              <span class="tooltiptext">MySql</span>
+            </div>
+            <div class="tooltip">
+              <img src="img/git.png" alt="" />
+              <span class="tooltiptext">Git</span>
+            </div>
+            <div class="tooltip">
+              <img src="img/bootstrap.png" alt="" />
+              <span class="tooltiptext">Bootstrap</span>
+            </div>
             <!-- <img src="img/" alt="" /> -->
           </div>
         </div>
@@ -132,7 +187,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
       </div>
-      <div class="footer-email">
+      <div class="footer-email" onclick="copyEmail()">
         <b><li>Email:</li></b>
         <li>aayush.prajapati0430@gmail.com</li>
       </div>
@@ -189,6 +244,10 @@
     });
   </script>
   <script>
+    function copyEmail() {
+      navigator.clipboard.writeText("aayush.prajapati0430@gmail.com"); //copy into clipboard
+      // alert("Email copied!");
+    }
     function menuToggle() {
       if (document.getElementById("nav-buttons").style.right == "0%") {
         document.getElementById("nav-buttons").style.right = "-100%";
