@@ -376,6 +376,11 @@ a{
     line-height: 1.8rem;
     font-size: 1.2rem;
 }
+.footer-email {
+    cursor: pointer;
+    cursor:-webkit-grab ;
+    
+}
 .footer-socials i{
     font-size:1.4rem ;
     color: white;

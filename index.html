@@ -70,7 +70,7 @@
     <div id="home" onclick="menuOff()">
       <img src="aayu.jpg" id="profile-pic" alt="" />
       <div class="profile-details">
-        <apan id="hello"></apan>
+        <span id="hello"></span>
         <p id="i-am">I'm Aayush</p>
         <p id="intro">~Web developer and a student~</p>
         <p id="intro2">
@@ -171,7 +171,7 @@
     </div>
     <div id="projects" onclick="menuOff()">
       <h3>My projects</h3>
-      <p>Projects Loading....</p>
+      <p><span id="load-dots"></span></p>
     </div>
 
     <div id="footer" onclick="menuOff()">
@@ -240,6 +240,15 @@
       backSpeed: 50,
       backDelay: 3000,
       startDelay: 1000,
+      loop: true,
+    });
+  </script>
+  <script>
+    var typed = new Typed("#load-dots", {
+      strings: ["Projects Loading.."],
+      typeSpeed: 80,
+      backSpeed: 70,
+      startDelay: 100,
       loop: true,
     });
   </script>
