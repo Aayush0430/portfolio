@@ -515,7 +515,8 @@ a{
         padding-bottom: 0;
     }
     #footer{
-        height: 40vh;
+        /* height: 40vh; */
+        height: 35vh;
         flex-direction: column;
         padding-top: 40px ;
     }
@@ -547,9 +548,11 @@ a{
         right: 2vw;
     }
     .footer-nav{
-        display: flex;
-        margin-top: 15apx;
-        justify-content: space-around;
+
+        /* display: flex; */
+        display: none;
+        /* margin-top: 15apx; */
+        /* justify-content: space-around; */
     }
     .footer-email{
         text-align: center;
@@ -559,5 +562,6 @@ a{
         justify-content: space-around;
         
     }
+    
 }
     
