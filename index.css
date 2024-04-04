@@ -486,7 +486,6 @@ a{
         flex-direction: column;
     }
     #greetings{
-        /* background-color: red; */
         width: 80vw;
         font-size: 1rem;
         font-weight: 600;
