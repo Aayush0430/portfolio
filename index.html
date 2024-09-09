@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="linkico.png" />
+    <meta property="og:image" content="linkico.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
+     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
+    
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -218,8 +223,18 @@
                 placeholder="Your Message"
                 required
               ></textarea>
+              <!-- <div
+                class="g-recaptcha"
+                data-sitekey="6LfUlzcqAAAAAJdnKyDmF799H9SDapLlR3aaUrXc"
+              ></div> -->
+              <div class="cf-turnstile" data-sitekey="0x4AAAAAAAizN9GBS6-HzV3A"></div>
+
             </div>
-            <button type="submit" class="submit-btn">Submit</button>
+            <button
+              class="submit-btn"
+              type="submit"
+            >Submit
+            </button>
           </form>
         </div>
       </div>
