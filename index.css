@@ -118,8 +118,10 @@ body {
   color: white;
   text-align: center;
   font-size: 1.8rem;
-  font-family: "Dancing Script", cursive;
+  /* font-family: "Dancing Script", cursive; */
+  font-family: "Poiret One", sans-serif;
 }
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
