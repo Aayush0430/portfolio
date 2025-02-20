@@ -112,7 +112,7 @@ body {
   width: 95%;
   margin: 0.7rem;
   object-fit: contain;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 .project-each p {
   color: white;
@@ -802,7 +802,7 @@ a {
     width: 90%;
     margin: 5% 5% 0 5%;
     object-fit: contain;
-    border-radius: 10px;
+    border-radius: 15px;
   }
   .project-each p {
     color: white;
