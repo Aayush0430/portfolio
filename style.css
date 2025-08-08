@@ -1,0 +1,221 @@
+/* Reset and base */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+/* Aquarium background gradient */
+.aquarium {
+  position: absolute;
+  inset: 0;
+  /* You can choose either gradient, I kept the first one */
+  background: linear-gradient(to bottom, #246d88 0%, #000000 100%);
+  overflow: hidden;
+  z-index: -3;
+}
+
+/* Caustics with SVG filter animation */
+.caustics {
+  position: absolute;
+  inset: 0;
+  mix-blend-mode: overlay;
+  animation: causticMove 15s linear infinite;
+  opacity: 0.08;
+}
+@keyframes causticMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-5%);
+  }
+}
+
+/* Sea grass */
+.sea-grass {
+  position: absolute;
+  bottom: 0;
+  left: var(--x);
+  width: 12px;
+  height: 40vh;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50% 50% 0 0;
+  animation: sway 6s ease-in-out infinite;
+  animation-delay: var(--delay);
+}
+@keyframes sway {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+/* Coral silhouette */
+.coral {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 20%;
+  height: 40%;
+  /* fill is handled by SVG path */
+}
+
+/* Particles (tiny specs for depth) */
+.particles::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px)
+    repeat;
+  background-size: 3px 3px;
+  animation: driftParticles 60s linear infinite;
+  pointer-events: none;
+}
+@keyframes driftParticles {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50px);
+  }
+}
+
+/* Fish silhouettes */
+.decor-fish {
+  position: absolute;
+  width: 80px;
+  height: 35px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  animation: drift 10s infinite;
+}
+.decor-fish::before {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  width: 20px;
+  height: 12px;
+  border-radius: 50%;
+  background: inherit;
+  transform: translateY(-50%);
+}
+.decor-fish.small {
+  opacity: 0.15;
+}
+.decor-fish.medium {
+  opacity: 0.25;
+}
+@keyframes drift {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+}
+
+/* Plants (alternative to sea grass if you want both) */
+.plants {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+}
+.plant {
+  position: absolute;
+  bottom: 0;
+  left: var(--x);
+  width: 30px;
+  height: var(--h);
+  background: linear-gradient(#1e6428, #0e5a3c);
+  border-radius: 50% 50% 0 0;
+  animation: sway 4s ease-in-out infinite;
+  animation-delay: var(--delay);
+}
+
+/* Seabed rocks */
+.seabed {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 15%;
+}
+.rock {
+  position: absolute;
+  bottom: 0;
+  width: 150px;
+  height: 60px;
+  border-radius: 50%;
+  background: #2a2219;
+}
+
+/* Bubbles */
+.bubbles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.bubble {
+  position: absolute;
+  bottom: -50px;
+  left: var(--left);
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px);
+  animation: rise var(--dur) linear infinite;
+  animation-delay: var(--delay);
+}
+@keyframes rise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-110vh) scale(0.5);
+    opacity: 0;
+  }
+}
+
+/* Whale on top */
+#whale {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+/* Overlay text */
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  font-family: cursive, sans-serif;
+  text-align: center;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+.decor-fish-svg {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  cursor: default;
+  user-select: none;
+  will-change: transform;
+}
